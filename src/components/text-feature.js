@@ -9,7 +9,7 @@ export default function TextFeature({
   btnURL = '#',
 }) {
   return (
-    <Box sx={StyleSheet.card}>
+    <Box sx={styles.card}>
       <Box sx={styles.wrapper}>
         <Text as="p" sx={styles.wrapper.subTitle}>
           {subTitle}
