@@ -9,7 +9,32 @@ export default function TextFeature({
   btnURL = '#',
 }) {
   return (
-    <h1>TextFeature</h1>
+    <Box sx={StyleSheet.card}>
+      <Box sx={styles.wrapper}>
+        <Text as="p" sx={styles.wrapper.subTitle}>
+          {subTitle}
+        </Text>
+        <Heading as="h2" sx={styles.wrapper.title}>
+          {title}
+        </Heading>
+      </Box>
+
+      {/* if there is a "description" then render some code */}
+      {description && (
+        <Text as="p" className="description" sx={styles.description}>
+          {description}
+        </Text>
+      )}
+
+      {/* if there is a "btnName" then render some code */}
+      {btnName && (
+        <Link href={btnURL} variant="default">
+          <Button variant="primary" aria-label={btnName}>
+            {btnName}
+          </Button>
+        </Link>
+      )}
+    </Box>
   );
 }
 
