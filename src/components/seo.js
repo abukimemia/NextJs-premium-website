@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 export default function SEO({
   description = 'startup product landing page',
-  author = 'JSM',
+  author = 'AbuTel',
   meta,
   title = 'startup landing title',
 }) {
